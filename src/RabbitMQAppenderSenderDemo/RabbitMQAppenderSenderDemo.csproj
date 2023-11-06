@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Log4Net.Appenders.RabbitMQ\Log4Net.Appenders.RabbitMQ.csproj" />
+    <PackageReference Include="Log4Net.RMQ.Appenders" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

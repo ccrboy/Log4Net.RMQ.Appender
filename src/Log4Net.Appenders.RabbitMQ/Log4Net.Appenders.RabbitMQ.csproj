@@ -4,7 +4,27 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Log4Net.RMQ.Appenders</PackageId>
+    <Title>Log4Net.RMQ.Appenders</Title>
+    <Authors>Bohdan Sukhoplesko</Authors>
+    <Product>Log4Net.RMQ.Appenders</Product>
+    <RepositoryUrl>https://github.com/ccrboy/Log4Net.RMQ.Appender.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Log4Net RabbitMQ Appender</PackageTags>
+    <Copyright>Copyright © 2023</Copyright>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath="" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.12" />

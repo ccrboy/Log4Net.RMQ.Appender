@@ -31,7 +31,6 @@ namespace Log4Net.Appenders.RabbitMQ
         public string Host { get; set; }
         public string Protocol { get; set; }
         public string Port { get; set; }
-        public string ApiName { get; set; }
 
         private Regex filterList = null;
 
@@ -118,14 +117,6 @@ namespace Log4Net.Appenders.RabbitMQ
 
             try
             {
-                if (string.IsNullOrWhiteSpace(ApiName))
-                {
-                    Console.WriteLine("ApiName was empty, fill with value [Default_ApiName]");
-                    ApiName = "Default_ApiName";
-                }
-
-                record.Add("ApiName", ApiName);
-
                 Console.WriteLine(JsonConvert.SerializeObject(loggingEvent));
                 
                 var message = JsonConvert.SerializeObject(record);
